@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/img_grid"-->
+        <!--android:layout_width="@dimen/wh200.0dimens200.0dp"-->
+        <!--android:layout_height="@dimen/wh100.0dimens100.0dp"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginBottom="@dimen/wh10.0dimens10.0dp"-->
+        <!--/>-->
+
+    <ImageView
+        android:id="@+id/img_grid"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wh100.0dimens100.0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/wh10.0dimens10.0dp"
+        />
+
+    <TextView
+        android:id="@+id/tx_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_grid"
+        android:width="@dimen/wh200.0dimens200.0dp"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:shadowRadius="0.1"
+        android:maxLines="1"
+        android:textColor="#373737"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wh100.0dimens100.0dp">
+            <RelativeLayout
+                android:id="@+id/rl_live_icon"
+                android:layout_width="@dimen/wh60.0dimens60.0dp"
+                android:layout_height="@dimen/wh18.0dimens18.0dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/search_header_live_type_mobile"
+                android:gravity="center">
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="@dimen/wh55.0dimens55.0dp"
+                android:layout_height="@dimen/wh18.0dimens18.0dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/recommend_online_bg"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_online_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:text="9999"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/wh10.0dimens10.0dp"
+                    android:layout_height="@dimen/wh10.0dimens10.0dp"
+                    android:layout_marginRight="@dimen/wh3.0dimens3.0dp"
+                    android:layout_marginTop="@dimen/wh3.0dimens3.0dp"
+                    android:layout_toLeftOf="@id/tv_online_num"
+                    android:src="@mipmap/home_reco_online_num_icon" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/img_nickname"
+                android:layout_width="@dimen/wh10.0dimens10.0dp"
+                android:layout_height="@dimen/wh10.0dimens10.0dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/wh6.0dimens6.0dp"
+                android:layout_marginLeft="@dimen/wh5.0dimens5.0dp"
+                android:layout_marginRight="@dimen/wh5.0dimens5.0dp"
+                android:src="@mipmap/home_reco_host_name_icon" />
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/wh5.0dimens5.0dp"
+                android:layout_toRightOf="@id/img_nickname"
+                android:ellipsize="end"
+                android:text="admin"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>
